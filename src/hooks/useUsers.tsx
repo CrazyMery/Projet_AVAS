@@ -8,6 +8,8 @@ export interface UserFormData {
   role: 'admin' | 'professionnel' | 'benevole' | 'global';
 }
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 export const useUsers = () => {
   const [users, setUsers] = useState<User[]>([]);
   const [loading, setLoading] = useState(false);
