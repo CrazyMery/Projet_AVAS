@@ -46,7 +46,7 @@ export const useUsers = () => {
       setLoading(true);
       setError('');
       
-      const response = await fetch(`http://localhost:3900/api/users/${userId}`);
+      const response = await fetch(`${API_BASE_URL}users/${userId}`);
       
       if (!response.ok) {
         throw new Error('Erreur lors du chargement de l\'utilisateur');
@@ -70,7 +70,7 @@ export const useUsers = () => {
       setLoading(true);
       setError('');
       
-      const response = await fetch('http://localhost:3900/api/users', {
+      const response = await fetch(`${API_BASE_URL}users`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -107,7 +107,7 @@ export const useUsers = () => {
         ? userData 
         : { name: userData.name, email: userData.email, role: userData.role };
 
-      const response = await fetch(`http://localhost:3900/api/users/${userId}`, {
+      const response = await fetch(`${API_BASE_URL}users/${userId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -143,7 +143,7 @@ export const useUsers = () => {
       setLoading(true);
       setError('');
       
-      const response = await fetch(`http://localhost:3900/api/users/${userId}`, {
+      const response = await fetch(`${API_BASE_URL}users/${userId}`, {
         method: 'DELETE',
       });
 
