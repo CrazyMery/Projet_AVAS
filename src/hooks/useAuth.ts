@@ -12,11 +12,13 @@ export interface LoginCredentials {
   password: string;
 }
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 export const useAuth = () => {
 
   const signIn = async (credentials: LoginCredentials): Promise<User> => {
 
-    const res = await fetch('http://localhost:3900/api/users/signin', {
+    const res = await fetch(`${API_BASE_URL}users/signin`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
