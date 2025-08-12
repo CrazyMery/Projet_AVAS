@@ -15,8 +15,8 @@ export const usePosts = () => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const token = 'EAAPDtIEENdYBPCJTPZAWf9upn9M8WAyYDVTxu5OTwAkcNvOzZARo4K49RxIQlxilPuZCvWCZBPLOZA2njpEodDCNxYChnEIpeqGhhv2OAXBGZAB809RVZC6XD6GjPyfnWBWycgpB5hXZBabp1GnBRwd6y3dZBXZAHk1SzbinXZBYZCk9pQpJu6glcDVkDLLaZCgvZCvdsgFIZBA';
-    const igAccountId = '17841476555801658';
+    const token = import.meta.env.VITE_IG_ACCESS_TOKEN;
+    const igAccountId = import.meta.env.VITE_IG_ACCOUNT_ID;
     const url = `https://graph.facebook.com/v19.0/${igAccountId}/media?fields=id,caption,media_url,permalink,timestamp,thumbnail_url&access_token=${token}`;
 
     fetch(url)
