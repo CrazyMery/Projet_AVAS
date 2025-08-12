@@ -17,6 +17,8 @@ export interface SiteData {
   };
 }
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 export const useInfos = () => {
   const [site, setSite] = useState<SiteData | null>(null);
   const [loading, setLoading] = useState(false);
@@ -28,7 +30,7 @@ export const useInfos = () => {
       setLoading(true);
       setError("");
 
-      const res = await fetch("http://localhost:3900/api/infos");
+      const res = await fetch(`${API_BASE_URL}infos`);
 
       if (!res.ok) throw new Error("Erreur lors du chargement des informations du site");
 
@@ -48,7 +50,7 @@ export const useInfos = () => {
       setLoading(true);
       setError("");
 
-      const res = await fetch("http://localhost:3900/api/infos", {
+      const res = await fetch(`${API_BASE_URL}infos`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
