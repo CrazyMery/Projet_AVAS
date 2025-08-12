@@ -10,12 +10,14 @@ export interface Team {
   isPrimary: Boolean;
 }
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 export const useTeams = () => {
   const [teams, setTeams] = useState<Team[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const baseUrl = "http://localhost:3900/api/teams";
+  const baseUrl = `${API_BASE_URL}teams`;
 
   // Get all teams
   const getAllTeams = async () => {
