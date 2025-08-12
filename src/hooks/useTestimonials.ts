@@ -19,12 +19,14 @@ export interface TestimonialFormData {
   userId: string;
 }
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 export const useTestimonials = () => {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const baseUrl = 'http://localhost:3900/api/testimonials';
+  const baseUrl = `${API_BASE_URL}testimonials`;
 
   // Get all testimonials
   const getAllTestimonials = async () => {
