@@ -18,12 +18,14 @@ export interface MessageFormData {
   content: string;
 }
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 export const useMessages = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const baseUrl = 'http://localhost:3900/api/messages';
+  const baseUrl = `${API_BASE_URL}messages`;
 
   // Get all messages
   const getAllMessages = async () => {
