@@ -46,13 +46,10 @@ const ElleLeVaulxBien: React.FC = () => {
                     <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">Elle le Vaulx Bien</h1>
 
                     <p className="text-base md:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto">
-                        Le projet “Elle le Vaulx Bien”, initié par l’Association Vaulx AmbitionS (AVAS) en 2022, est
-                        né d'un constat préoccupant : la disparition progressive de la présence féminine dans
-                        l'espace public du quartier du Grand Mas et plus largement dans la ville de Vaulx-en-
-                        Velin. Face à cette situation, AVAS a décidé de créer un programme spécifiquement
-                        dédié aux jeunes filles, avec pour objectif de favoriser leur insertion sociale, de les
-                        encourager à réinvestir l'espace public et de les accompagner dans leur parcours
-                        d'épanouissement personnel.
+                        Le projet « Elle le Vaulx Bien », lancé en 2022 par l’Association Vaulx AmbitionS (AVAS),
+                        répond à la baisse de la présence féminine dans l’espace public à Vaulx-en-Velin, notamment au
+                        Grand Mas. Il vise à favoriser l’insertion sociale des jeunes filles,
+                        à les encourager à réinvestir l’espace public et à soutenir leur épanouissement personnel.
                     </p>
                 </div>
             </div>
