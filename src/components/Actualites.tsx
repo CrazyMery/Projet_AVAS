@@ -18,12 +18,11 @@ const Actualites: React.FC = () => {
   return (
     <section>
       {/* Hero Section */}
-      <div className="relative h-[30vh] md:h-[40vh] lg:h-[50vh] flex items-center justify-center text-white">
+      <div className="relative h-[30vh] md:h-[40vh] lg:h-[50vh] flex items-center justify-center text-black">
         <div
           className="absolute inset-0 bg-fixed bg-center bg-cover z-0"
-          style={{ backgroundImage: `url('/actuality-hero.png')` }}
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
+        <div className="absolute inset-0 bg-white bg-opacity-50 z-10" />
         <div className="relative z-20 max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">Actualités</h1>
           <p className="text-base md:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto">

@@ -10,33 +10,38 @@ const PoleMediation: React.FC = () => {
 
     const trainingSkills = [
         {
-            title: "Qualité, Sécurité, Environnement (QSE)",
+            title: "Posture Professionnelle",
             description: "POSTURE PROFESSIONNELLE",
             image: "/mediation1.png"
         },
         {
-            title: "Posture Professionnelle",
+            title: "Communication Non-Violente (CNV)",
             description: "CNV",
             image: "/mediation2.png"
         },
         {
-            title: "Communication Non-Violente (CNV)",
+            title: "Qualité, Sécurité, Environnement (QSE)",
             description: "QSE",
             image: "/mediation3.png"
         }
     ];
 
     const missions = [
-        {
+        /*{
             period: "Janvier - Juin 2024",
             partner: "PETAVIT",
             description: "Nous avons assuré, pour l'entreprise PETAVIT, l'entretien et le gardiennage quotidien de leur base vie et de la zone de leur chantier à Vaulx-en-Velin, qui a pour objectif le dévoiement des canalisations d'eau pour préparer la venue du T9.",
             image: "/mediation-mission1.jpeg"
-        },
+        },*/
         {
-            period: "Jusqu'en Juillet 2024",
-            partner: "COLAS",
-            description: "Nous assurons, pour l'entreprise COLAS, l'entretien du gardiennage quotidien de leur base vie et de la zone de leur chantier à Vaulx-en-Velin. De plus, nous avons mis en place un poste de médiation riverain qui assure en amont la prévention au sein de l'écosystème entourant les sites en questions, en établissant un dialogue avec tous les acteurs du quartier, des jeunes en difficulté aux habitants lambda. Il facilite la communication entre les différents acteurs",
+            period: undefined,
+            partner: undefined,
+            description: "<p>Nos services : </p>" +
+                "<ul class=\"list-disc list-inside space-y-2 mt-5 mb-4\">" +
+                    "<li>Le Médiateur : Il effectue des missions de gardiennage de base vie et/ou de chantiers, de jour comme de nuit, 24 heures sur 24, 7 jours sur 7.</li>" +
+                    "<li>Le Référent riverains : Il assure en amont la prévention au sein de l'écosystème entourant la base vie et le chantier, en établissant un dialogue avec tous les acteurs du quartier, des jeunes en difficulté aux habitants lambda. Il facilite la communication entre les différents acteurs (SYTRAL, habitants, commerçants, équipes de travaux publics, etc.) durant les jours ouvrables.</li>" +
+                    "<li>L'Agent d’entretien : Effectue l'entretien des locaux en fin de journée, en semaine.</li>" +
+                "</ul>",
             image: "/mediation-mission2.jpeg"
         }
     ];
@@ -48,9 +53,8 @@ const PoleMediation: React.FC = () => {
     ];
 
     const ramadanStats = [
-        { number: "4000-6000", label: "visiteurs quotidiens" },
-        { number: "317", label: "mètres linéaires d'exposition" },
-        { number: "70+", label: "forains" },
+        { number: "6000-8000", label: "visiteurs quotidiens" },
+        { number: "60+", label: "forains" },
         { number: "30", label: "jours consécutifs" }
     ];
 
@@ -87,7 +91,10 @@ const PoleMediation: React.FC = () => {
 
                 {/* Content */}
                 <div className="relative z-20 max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-center">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">LE PÔLE MÉDIATION</h1>
+                    <div className="flex items-center gap-6 md:gap-8 mb-4 md:mb-6 justify-center">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">LE PÔLE MÉDIATION</h1>
+                        <img className="rounded-full" src="/pole-emploi.png" width="100" height="100"></img>
+                    </div>
                     <p className="text-base md:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto">
                         Accompagner l'insertion professionnelle par la médiation urbaine
                     </p>
@@ -141,7 +148,7 @@ const PoleMediation: React.FC = () => {
                         LE RECRUTEMENT ET LA FORMATION
                     </h2>
 
-                    <div className="text-left text-sm md:text-base lg:text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto mb-8 md:mb-12 flex flex-col lg:flex-row gap-6">
+                    <div className="text-left text-sm md:text-base lg:text-lg text-gray-600 leading-relaxed max-w-5xl mx-auto mb-8 md:mb-12 flex flex-col lg:flex-row gap-6">
                         {/* text side */}
                         <div className="flex-1">
                             <p className="mb-2">
@@ -154,15 +161,6 @@ const PoleMediation: React.FC = () => {
                             <p>
                                 Pour soutenir ces jeunes, nous proposons des formations JCDecaux continues tout au long de l'année, telles que :
                             </p>
-                        </div>
-
-                        {/* image side */}
-                        <div className="w-full lg:w-1/3 flex-shrink-0">
-                            <img
-                                src="/mediation-partners.png"
-                                alt="partners"
-                                className="rounded-lg object-cover w-full h-full"
-                            />
                         </div>
                     </div>
 
@@ -205,11 +203,18 @@ const PoleMediation: React.FC = () => {
                                         />
                                     </div>
                                     <div className="p-4 md:p-6 lg:p-8">
-                                        <div className="bg-green-100 text-green-800 px-3 md:px-4 py-1 md:py-2 rounded-full text-xs md:text-sm font-medium mb-3 md:mb-4 w-fit">
-                                            {mission.period}
-                                        </div>
+                                        {
+                                            mission.period ? (
+                                                <div className="bg-green-100 text-green-800 px-3 md:px-4 py-1 md:py-2 rounded-full text-xs md:text-sm font-medium mb-3 md:mb-4 w-fit">
+                                                    {mission.period}
+                                                </div>
+                                            ) : null
+                                        }
                                         <p className="text-green-600 font-semibold mb-3 md:mb-4 text-sm md:text-base">{mission.partner}</p>
-                                        <p className="text-sm md:text-base text-gray-600 leading-relaxed">{mission.description}</p>
+                                        <div className="text-sm md:text-base text-gray-600 leading-relaxed"
+                                           dangerouslySetInnerHTML={{ __html: mission.description }}
+                                        >
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -332,15 +337,15 @@ const PoleMediation: React.FC = () => {
                             métropole, qui ne pourraient envisager cette période sans lui.
                             <br /><br />
                             Avec le soutien de la mairie et de la métropole, l'association AVAS
-                            organise, gére et sécurise, depuis trois ans, le plus grand marché
+                            organise, gére et sécurise, depuis quatre ans, le plus grand marché
                             du Ramadan de la région Auvergne-Rhône-Alpes, avec cette
                             année une hausse de fréquentation, attirant quotidiennement entre
-                            4 000 et 6 000 visiteurs.
+                            6 000 et 8 000 visiteurs.
                         </p>
                         <img src="/ramadan.jpeg" alt="ramadan" className="w-96 h-auto rounded-lg shadow-lg mb-6 md:mb-8 lg:mb-12 hover:scale-105 transition-transform duration-300" />
                     </div>
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12">
                         {ramadanStats.map((stat, index) => (
                             <div key={index} className="text-center bg-gray-50 rounded-lg p-4 md:p-6">
                                 <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-green-600 mb-2">
@@ -396,30 +401,6 @@ const PoleMediation: React.FC = () => {
                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                             />
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            {/* Section 8: Partners */}
-            <div className="bg-white py-8 md:py-12 lg:py-16">
-                <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-8 md:mb-12">
-                        NOS PARTENAIRES
-                    </h2>
-
-                    <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 lg:gap-12">
-                        {partners.map((partner, index) => (
-                            <div key={index} className="bg-gray-50 rounded-lg p-4 md:p-6 hover:shadow-lg transition-shadow duration-300">
-                                <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-2 md:mb-3 rounded-full overflow-hidden border-2 border-white shadow-md">
-                                    <img
-                                        src={partner.logo}
-                                        alt={partner.name}
-                                        className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
-                                    />
-                                </div>
-                                <p className="text-xs md:text-sm text-gray-600 text-center font-medium">{partner.name}</p>
-                            </div>
-                        ))}
                     </div>
                 </div>
             </div>

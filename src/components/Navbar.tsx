@@ -73,7 +73,7 @@ const Navbar: React.FC<NavbarProps> = ({
               {/* Dropdown */}
               <div className="relative group">
                 <button className="flex items-center text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
-                  Poles
+                  Pôles
                   <ChevronDown size={16} className="ml-1" />
                 </button>
                 <div className="absolute top-full left-0 bg-white shadow-lg rounded-md py-2 w-48 hidden group-hover:block z-40">
@@ -92,13 +92,10 @@ const Navbar: React.FC<NavbarProps> = ({
               <span className="text-gray-300">|</span>
               <a href="/partenaires" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Nos partenaires</a>
               <span className="text-gray-300">|</span>
-              <a href="/equipe" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Notre équipe</a>
-              <span className="text-gray-300">|</span>
               <a href="/contact" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contact</a>
-              <span className="text-gray-300">|</span>
               
               {/* Authentication Section */}
-              {!isAuthenticated ? (
+              {/*!isAuthenticated ? (
                 <button 
                   onClick={handleLogin}
                   className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
@@ -150,7 +147,7 @@ const Navbar: React.FC<NavbarProps> = ({
                     </div>
                   )}
                 </div>
-              )}
+              )*/}
             </div>
           </div>
 
@@ -180,7 +177,7 @@ const Navbar: React.FC<NavbarProps> = ({
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 className="w-full flex justify-between items-center text-gray-700 hover:text-blue-600 text-lg"
               >
-                Poles
+                Pôles
                 <ChevronDown
                   size={18}
                   className={`transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`}

@@ -31,26 +31,19 @@ const PoleCitoyennete: React.FC = () => {
 
       {/* Second Section */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        {/* Title with horizontal line */}
-        <div className="flex items-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-yellow-400 whitespace-nowrap">
-            Objectifs
-          </h2>
-          <div className="flex-1 h-px bg-gradient-to-r from-yellow-400 to-transparent ml-8"></div>
-        </div>
 
         {/* Text and Logo */}
         <div className="flex flex-row justify-between items-start gap-8 mb-12">
           <div className="flex-1">
             <p className="text-gray-600 leading-relaxed text-lg">
-              Ce pôle vise à <span className='font-medium text-black'>revitaliser la participation</span> des adultes en lançant un véritable <span className='font-medium text-black'>"Incubateur d'initiatives citoyennes"</span> avec pour objectif central le <span className='font-medium text-black'>renforcement du pouvoir d'agir</span> des habitants.
+              Ce pôle vise à <span className='font-medium text-black'>revitaliser la participation</span> des habitants en lançant un véritable <span className='font-medium text-black'>"Incubateur d'initiatives citoyennes"</span> avec pour objectif central le <span className='font-medium text-black'>renforcement du pouvoir d'agir</span> des habitants.
             </p>
           </div>
 
           {/* Small Logo */}
           <div className="flex-shrink-0">
             <div className="w-20 h-20 bg-blue-50 rounded-lg flex items-center justify-center hover:bg-blue-100 transition-colors duration-300">
-              <img src='/logo.jpg' className="w-18 h-18 text-blue-600" />
+              <img src='/pole-citoyennete.png' className="w-18 h-18 text-blue-600" />
             </div>
           </div>
         </div>
@@ -118,16 +111,16 @@ const PoleCitoyennete: React.FC = () => {
 
         {/* Description text */}
         <div className="mb-12">
-          <p className="text-gray-600 leading-relaxed text-lg max-w-4xl">
+          <p className="text-gray-600 leading-relaxed text-lg">
             Apprendre en faisant l'expérience collaborative pour acquérir les compétences nécessaires au développement de projets et être en mesure d'en piloter les étapes : l'ingénierie du projet, sa gestion et sa valorisation.
           </p>
-          <p className="text-gray-600 leading-relaxed text-lg max-w-4xl mt-5">
+          <p className="text-gray-600 leading-relaxed text-lg mt-5">
             Chaque membre qui intègre activement l'aventure reste impliqué dans son ancrage associatif et apporte ses compétences pour les partager, de telle sorte que l'ensemble de I'équipe puisse progresser.
           </p>
-          <p className="text-gray-600 leading-relaxed text-lg max-w-4xl mt-5">
+          <p className="text-gray-600 leading-relaxed text-lg mt-5">
             Dans le cadre d’un plan de montée en compétences,les membres ont déja été formés :
           </p>
-          <ul className="list-disc pl-6">
+          <ul className="list-disc pl-6 text-gray-600 leading-relaxed text-lg">
             <li>au “community-organizing” par Hélène Balazard, chercheuse et politiste (ENTPE),</li>
             <li>à la “Communication Non-Violente” par Jean-Luc Sost (“à partir de maintenant”),</li>
             <li>aux “Valeurs de la République & Laïcité” par Ruth Ouazana & Jaafar Greinch (“Racines de Demain”).</li>
@@ -458,7 +451,7 @@ const PoleCitoyennete: React.FC = () => {
             <p className="text-gray-600 font-semibold leading-relaxed text-lg max-w-4xl">
               Ce que cela a favorisé :
             </p>
-            <p className="text-gray-600 leading-relaxed text-lg max-w-4xl">
+            <p className="mt-5 justify-center">
               L'apprentissage du « faire-ensemble » entre deux populations dont les vécus quotidiens sont très différents.
             </p>
           </div>
@@ -561,7 +554,7 @@ const PoleCitoyennete: React.FC = () => {
             <p className="text-gray-600 font-semibold leading-relaxed text-lg max-w-4xl">
               Ce que cela a favorisé :
             </p>
-            <p className="text-gray-600 leading-relaxed text-lg max-w-4xl">
+            <p className="mt-5 justify-center">
               Un rapprochement avec l'équipe de jeunes-leaders de Lyon 8ème formée par Samia Bencherifa (Centres Sociaux Gisèle Halimi & Jean Mermoz) avec qui nous cultivons l’intérêt de l'éducation populaire & du bien-commun qui en résulte.
             </p>
           </div>
@@ -589,7 +582,7 @@ const PoleCitoyennete: React.FC = () => {
             </p>
             <ul className="list-disc pl-6">
               <li className='my-4'>Linter-connaissance culturelle pour “dépasser les frontières”.</li>
-              <li className='my-4'>Mettre en lumiére des parcours de vie inspirants.</li>
+              <li className='my-4'>Mettre en lumière des parcours de vie inspirants.</li>
               <li className='my-4'>Susciter une prise de conscience sociale & une reconnaissance de ces jeunes-adultes qui sont exemplaires par leur agilité.</li>
             </ul>
           </div>
@@ -625,8 +618,8 @@ const PoleCitoyennete: React.FC = () => {
             </p>
           </div>
           <ul className="pl-6">
-            <li className='relative my-4'>Comment inscrire une trajectoire culturelle (I'identité et 'appartenance) alors qu'il peut y avoir un conflit de normes entre l'espace privé et l'espace public ?<span className="absolute -left-8 -top-2 text-4xl text-yellow-500 font-extrabold">1</span></li>
-            <li className='relative my-4'>Comment naviguer au milieu d’une pluralité de registres éthiques (léducation) alors qu'il peut y avoir un conflit de normes entre I'espace familial et scolaire autant quavec la rue ?<span className="absolute -left-8 top-0 text-4xl text-yellow-500 font-extrabold">2</span></li>
+            <li className='relative my-4'>Comment inscrire une trajectoire culturelle (I'identité et l'appartenance) alors qu'il peut y avoir un conflit de normes entre l'espace privé et l'espace public ?<span className="absolute -left-8 -top-2 text-4xl text-yellow-500 font-extrabold">1</span></li>
+            <li className='relative my-4'>Comment naviguer au milieu d’une pluralité de registres éthiques (l'éducation) alors qu'il peut y avoir un conflit de normes entre I'espace familial et scolaire autant quavec la rue ?<span className="absolute -left-8 top-0 text-4xl text-yellow-500 font-extrabold">2</span></li>
             <li className='relative my-4'>Comment déterminer un projet professionnel (le travail) alors qu'il peut y avoir un conflit de normes entre la réussite individuelle et la dimension altruiste de la réussite ?<span className="absolute -left-8 top-0 text-4xl text-yellow-500 font-extrabold">3</span></li>
             <li className='relative my-4'>Comment permettre aux décideurs institutionnels deffectuer des arbitrages apaisés (la concertation) alors qu'’il peut y avoir un conflit de normes entre l'expertise d'ouvrage des techniciens et l'expertise d'usage des habitants ?<span className="absolute -left-8 -top-2 text-4xl text-yellow-500 font-extrabold">4</span></li>
           </ul>
@@ -655,8 +648,8 @@ const PoleCitoyennete: React.FC = () => {
               PERSPECTIVE Printemps 2025
             </p>
           </div>
-          <p className="text-gray-600 leading-relaxed text-lg">
-            Ce projet vise à préserver et valoriser la mémoire de Vaulx-en-Velin à travers les témoignages et analyses des habitants, souvent négligés par les institutions. Ils'agit de documenter l’histoire locale au plus près des citoyens, en dehors du prisme médiatique. Les matériaux visuels et sonores collectés servent à dresser des diagnostics tout en illustrant la solidarité et l'ingéniosité des générations de Vaudais. Grâce à des outils collaboratifs, ces archives seront structurées et mises en valeur via un plan de classement. <br />
+          <p className="mt-5 justify-center">
+            Ce projet vise à préserver et valoriser la mémoire de Vaulx-en-Velin à travers les témoignages et analyses des habitants, souvent négligés par les institutions. Il s'agit de documenter l’histoire locale au plus près des citoyens, en dehors du prisme médiatique. Les matériaux visuels et sonores collectés servent à dresser des diagnostics tout en illustrant la solidarité et l'ingéniosité des générations de Vaudais. Grâce à des outils collaboratifs, ces archives seront structurées et mises en valeur via un plan de classement. <br />
             Ce Fonds Local, en constante évolution, référencera une multitude d’'histoires urbaines avec la participation essentielle des habitants. À l'automne 2024, un Comité de Pilotage sera mis en place et des experts consultés pour structurer ce projet, qui aboutira à une collection accessible en médiathèques et sur une plateforme numérique.
           </p>
         </div>

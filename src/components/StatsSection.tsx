@@ -21,29 +21,33 @@ const StatsSection: React.FC = () => {
 
   return (
     <section className="py-8 md:py-16 bg-white">
-      <div className="mx-auto px-4 md:px-6 lg:px-8">
-        {/* Section Title */}
-        <div className="text-center mb-8 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4 md:mb-8">
-            2024 en chiffres
-          </h2>
-        </div>
-
-        {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-          {stats.map((stat) => (
-            <div key={stat.id} className="text-center">
-              {/* Stat Number */}
-              <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-600 mb-2 md:mb-4">
-                {stat.value}
-              </div>
-              
-              {/* Stat Title */}
-              <h3 className="text-lg md:text-xl font-medium text-black">
-                {stat.title}
-              </h3>
+      {/* 2024 en chiffres */}
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-center text-xl md:text-2xl font-bold mb-6 md:mb-10">2024 EN CHIFFRES</h2>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-0 text-white">
+          <div className="bg-blue-600 w-40 h-40 md:w-48 md:h-48 rounded-full flex items-center justify-center text-center px-3 md:px-4 text-xs md:text-sm">
+            <div>
+              <p>10 collaborateurs</p>
+              <p>8 ETP</p>
+              <p>Équipe mixte</p>
+              <p>50% femmes</p>
+              <p>50% hommes</p>
             </div>
-          ))}
+          </div>
+          <div className="bg-red-400 md:-mx-5 w-40 h-40 md:w-48 md:h-48 rounded-full flex items-center justify-center text-center px-3 md:px-4 text-xs md:text-sm">
+            <div>
+              <p>+200 familles adhérentes</p>
+              <p>+60 bénévoles actifs</p>
+              <p>3 pôles structurants</p>
+            </div>
+          </div>
+          <div className="bg-yellow-400 text-black w-40 h-40 md:w-48 md:h-48 rounded-full flex items-center justify-center text-center px-3 md:px-4 text-xs md:text-sm">
+            <div>
+              <p>Équipe d’administrateurs</p>
+              <p>intergénérationnelle</p>
+              <p>6 membres du bureau</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

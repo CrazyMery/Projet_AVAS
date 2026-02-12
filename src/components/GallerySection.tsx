@@ -12,9 +12,9 @@ const GallerySection: React.FC = () => {
     },
     {
       id: 2,
-      image: '/initiatives.JPG',
-      title: 'Notre Initiatives',
-      description: `Nous visons à renforcer l'engagement des jeunes et des habitants de Vaulx-en-Velin à travers des actions menées dans les domaines de la jeunesse, de la citoyenneté et de la médiation urbaine. En valorisant l’accompagnement, la solidarité et le vivre-ensemble, nous participons activement à la construction d’une dynamique locale positive et inclusive`,
+      image: '/pole-jeunesse.png',
+      title: 'Le Pôle Jeunesse',
+      description: `Le Pôle Jeunesse est le pilier fondateur de l'association. Dès sa création, il a incarné la volonté d'accompagner et de soutenir les jeunes du quartier dans tous les aspects de leur développement, qu'il s'agisse de leur épanouissement personnel, de leur réussite scolaire ou de leur insertion sociale et professionnelle.`,
       position: 'bottom-left',
       link: '/poles/pole-jeunesse'
     },

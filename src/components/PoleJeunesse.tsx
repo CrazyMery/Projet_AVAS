@@ -13,7 +13,7 @@ const PoleJeunesse: React.FC = () => {
     },
     {
       title: "L'Accompagnement à la Scolarité: À Vaulx Réussites",
-      description: "Service d'aide scolaire personnalisé pour favoriser la réussite éducative.",
+      description: "Dispositif d’accompagnement à la scolarité personnalisé pour favoriser la réussite éducative.",
       subPoints: [
         "Aide personnalisée",
         "Relations école-parents",
@@ -31,11 +31,15 @@ const PoleJeunesse: React.FC = () => {
     },
     {
       title: "Un Été aux Noirettes",
-      description: "Programme estival proposant des activités nautiques et de plein air pour renforcer la cohésion sociale.",
+      description: "Dispositif estival proposant des activités nautiques et de plein air pour renforcer la cohésion sociale.",
     },
     {
       title: "A Vaulx Tours",
       description: "Programme immersif pour les jeunes de Vaulx-en-Velin, renfrorçant l'identité, la fierté et le leadership",
+    },
+    {
+      title: "Elle le Vaulx Bien",
+      description: "Le projet « Elle le Vaulx Bien », lancé en 2022 par l’Association Vaulx AmbitionS (AVAS), répond à la baisse de la présence féminine dans l’espace public à Vaulx-en-Velin, notamment au Grand Mas. Il vise à favoriser l’insertion sociale des jeunes filles, à les encourager à réinvestir l’espace public et à soutenir leur épanouissement personnel.",
     }
   ];
 
@@ -213,14 +217,14 @@ const PoleJeunesse: React.FC = () => {
       <div id='activity-2' className='bg-gray-100'>
         <div className="mx-auto px-4 md:px-6 lg:px-8 py-8 md:py-12 lg:py-16 max-w-screen-xl">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-8">
-            L'Accompagnement à la Scolarité: À Vaulx Réussites 2022
+            L'Accompagnement à la Scolarité: À Vaulx Réussites
           </h2>
 
           <div className="flex flex-col md:flex-row items-start gap-10">
             {/* Left: Text */}
             <div className="flex-1 max-w-2xl">
               <p className="text-sm md:text-base lg:text-lg text-gray-600 leading-relaxed mb-4">
-                En parallèle, le Local Jeunesse offre :
+                En parallèle depuis 2022, le Local Jeunesse offre :
               </p>
               <ul className="list-disc pl-6 text-sm md:text-base lg:text-lg text-gray-600 leading-relaxed mb-6">
                 <li>Un soutien indispensable aux jeunes dans leur parcours scolaire.</li>
@@ -263,13 +267,13 @@ const PoleJeunesse: React.FC = () => {
       {/* Section 5: Les Chantiers Jeunes */}
       <div id='activity-3' className='bg-blue-50'>
         <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-8 md:py-12 lg:py-16">
-          <h2 className="flex justify-center items-center gap-5 text-2xl md:text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-6 md:mb-8">Les Chantiers Jeunes <img src="/partners/est_metropole_habitat.png" alt="Chantier" className="w-24 h-auto rounded-full shadow-md" />
+          <h2 className="flex justify-center items-center gap-5 text-2xl md:text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-6 md:mb-8">Les Chantiers Jeunes
           </h2>
           <p className="text-sm md:text-base lg:text-lg text-gray-600 text-center leading-relaxed max-w-4xl mx-auto mb-8 md:mb-12">
-            En partenariat avec Est Métropole Habitat nous offrons aux adolescents l'opportunité de s’investir activement dans l'entretien de leur quartier et de leur ville, tout en acquérant des compétences utiles pour leur avenir.
+            En partenariat avec la ville et les bailleurs, nous offrons aux jeunes l'opportunité de s’investir activement dans l'entretien de leur quartier et de leur ville, tout en acquérant des compétences utiles pour leur avenir.
             <br />
             <br />
-            Tout au long de l’année, selon les besoins du bailleur, les jeunes ont la possibilité de
+            Durant les vacances scolaires, selon les besoins du bailleur, les jeunes ont la possibilité de
             s'inscrire à des chantiers de quelques jours pour effectuer des travaux tels que :
           </p>
 
@@ -342,49 +346,7 @@ const PoleJeunesse: React.FC = () => {
             scolaires.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
-            <div className="aspect-video overflow-hidden rounded-lg shadow-lg">
-              <img
-                src="/noirettes1.png"
-                alt="Jeunes en bateau"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="aspect-video overflow-hidden rounded-lg shadow-lg">
-              <img
-                src="/noirettes2.png"
-                alt="Jeux aquatiques"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="aspect-video overflow-hidden rounded-lg shadow-lg">
-              <img
-                src="/noirettes3.png"
-                alt="Activités de groupe"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          </div>
         </div>
-      </div>
-
-      <div id='activity-5' className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-8 md:py-12 lg:py-16">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-6 md:mb-8">A Vaulx Tours</h2>
-        <p className="text-sm md:text-base lg:text-lg text-gray-600 text-center leading-relaxed max-w-4xl mx-auto mb-8 md:mb-12">
-          Lancé en 2025, A Vaulx Tours est un programme culturel et citoyen imaginé par l’association AVAS pour accompagner les jeunes de Vaulx-en-Velin dans leur ouverture au monde et leur développement personnel. Pensé comme une invitation au voyage et à la découverte, il s’adresse à plus de 250 jeunes vaudais, notamment ceux issus des quartiers prioritaires.
-          <br /><br />
-          Ce dispositif propose des sorties culturelles, des week-ends immersifs et des séjours en France ou à l’étranger, autour de thématiques fortes : l’identité, l’engagement citoyen, la diversité culturelle et la fierté des quartiers. À travers ces expériences, les jeunes explorent leur histoire, rencontrent d'autres associations, visitent des institutions et découvrent de nouveaux territoires.
-          <br /><br />
-          A Vaulx Tours vise ainsi à valoriser les talents, encourager la prise de parole, favoriser la mixité et former les citoyens engagés de demain. Ce projet structurant constitue un levier fort d’inclusion, d’émancipation et d’éveil à la citoyenneté.
-        </p>
-
-          <div className="aspect-video overflow-hidden rounded-lg shadow-lg">
-            <img
-              src="/vaux.png"
-              alt="Jeunes en bateau"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-            />
-          </div>
       </div>
 
       {/* Section 8: Themed Program Tiles */}
@@ -433,7 +395,6 @@ const PoleJeunesse: React.FC = () => {
                   </div>
                   {index == 5 && (
                     <div className='flex flex-wrap gap-2 mt-4'>
-                      <img src="/partners/CSLevy.jpg" alt="CSLevy" className='w-12 h-12 object-contain' />
                       <img src="/partners/surprize.jpg" alt="surprize" className='w-12 h-12 object-contain' />
                       <img src="/partners/msports.png" alt="msports" className='w-12 h-12 object-contain' />
                       <img src="/logo.png" alt="avas" className='w-12 h-12 object-contain' />
@@ -445,6 +406,25 @@ const PoleJeunesse: React.FC = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div id='activity-5' className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-8 md:py-12 lg:py-16">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-6 md:mb-8">A Vaulx Tours</h2>
+        <p className="text-sm md:text-base lg:text-lg text-gray-600 text-center leading-relaxed max-w-4xl mx-auto mb-8 md:mb-12">
+          Lancé en 2025, A Vaulx Tours est un programme culturel et citoyen imaginé par l’association AVAS pour accompagner les jeunes de Vaulx-en-Velin dans leur ouverture au monde et leur développement personnel. Pensé comme une invitation au voyage et à la découverte, il s’adresse à plus de 250 jeunes vaudais, notamment ceux issus des quartiers prioritaires.
+          <br /><br />
+          Ce dispositif propose des sorties culturelles, des week-ends immersifs et des séjours en France ou à l’étranger, autour de thématiques fortes : l’identité, l’engagement citoyen, la diversité culturelle et la fierté des quartiers. À travers ces expériences, les jeunes explorent leur histoire, rencontrent d'autres associations, visitent des institutions et découvrent de nouveaux territoires.
+          <br /><br />
+          A Vaulx Tours vise ainsi à valoriser les talents, encourager la prise de parole, favoriser la mixité et former les citoyens engagés de demain. Ce projet structurant constitue un levier fort d’inclusion, d’émancipation et d’éveil à la citoyenneté.
+        </p>
+
+          <div className="aspect-video overflow-hidden rounded-lg shadow-lg">
+            <img
+              src="/vaux.png"
+              alt="Jeunes en bateau"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
       </div>
     </section>
   );
