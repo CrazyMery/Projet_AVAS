@@ -1,5 +1,6 @@
 import React from 'react';
 import { Users, BookOpen, Target, Wrench, Calendar, MapPin, Activity, Heart } from 'lucide-react';
+import ElleLeVaulxBien from './ElleLeVaulxBien';
 
 const PoleJeunesse: React.FC = () => {
   const dailyActivities = [
@@ -100,7 +101,7 @@ const PoleJeunesse: React.FC = () => {
     {
       name: "Les Loisirs Nocturnes",
       description: "Un collectif de cinq associations locales qui allient leur force pour proposer en plus de leur programmation respective un évènement d'ampleur inter-quartier chaque samedi d'été. Au programme : cinéma en plein air, spectacles, vol en montgolfière, stand gaming...",
-      image: "/program6.jpeg",
+      image: "/loisirs_nocturnes.jpeg",
       stats: ["500–800 personnes accueillies"]
     }
   ];
@@ -109,9 +110,9 @@ const PoleJeunesse: React.FC = () => {
     <section>
       {/* Section 1: Introduction */}
       <div className="relative h-[30vh] md:h-[40vh] lg:h-[50vh] flex items-center justify-center text-white">
-        <div
-          className="absolute inset-0 bg-fixed bg-center bg-cover z-0"
-          style={{ backgroundImage: `url('/pole-jeunesse.png')` }}
+          <div
+            className="absolute inset-0 bg-bottom bg-cover z-0"
+            style={{ backgroundImage: `url('/jeunesse2.jpeg')`, backgroundPosition: 'center bottom -300px' }}
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
         <div className="relative z-20 max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-center">
@@ -141,7 +142,7 @@ const PoleJeunesse: React.FC = () => {
 
             <div className="w-72 mx-auto aspect-square overflow-hidden rounded-lg shadow-lg">
               <img
-                src="/jeunesse_presentation1.jpeg"
+                src="/jeunesse_presentation3.jpeg"
                 alt="Groupe de jeunes"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -166,7 +167,7 @@ const PoleJeunesse: React.FC = () => {
           </div>
             <div className="w-72 mx-auto aspect-square overflow-hidden rounded-lg shadow-lg">
               <img
-                src="/jeunesse_presentation2.jpeg"
+                src="/jeunesse_presentation4.jpeg"
                 alt="Jeunes en action"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -238,11 +239,21 @@ const PoleJeunesse: React.FC = () => {
             {/* Right: Image */}
             <div className="flex-1 aspect-video overflow-hidden rounded-lg shadow-lg">
               <img
-                src="/accompagnement.jpeg"
+                src="/accompagnement2.jpeg"
                 alt="Jeunes en soutien scolaire"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row flex-end items-center gap-3 mt-10 justify-end text-sm md:text-base lg:text-lg text-gray-600">
+            Soutenu par
+            <img 
+              src="/cites_educatives.png"
+              width="100"
+              height="100"
+              alt="Cités éducatives"
+            />
           </div>
         </div>
       </div>
@@ -327,7 +338,10 @@ const PoleJeunesse: React.FC = () => {
       {/* Section 7: Un Été aux Noirettes */}
       <div id='activity-4' className='bg-gray-100'>
         <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-8 md:py-12 lg:py-16">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-6 md:mb-8">Un Été aux Noirettes</h2>
+          <div className="flex flex-row items-center justify-center gap-4 mb-8 md:mb-12">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-gray-900">Un Été aux Noirettes</h2>
+              <img src="/logo_uen.png" alt="Un été aux Noirettes"  width="100" height="100" />
+          </div>
           <p className="text-sm md:text-base lg:text-lg text-gray-600 text-center leading-relaxed max-w-4xl mx-auto mb-8 md:mb-12">
             Lancé en 2023, "Un été aux Noirettes" est un dispositif spécial mis en
             place pour accompagner les habitants du Grand Mas, et plus
@@ -426,6 +440,9 @@ const PoleJeunesse: React.FC = () => {
             />
           </div>
       </div>
+
+      {/* Section 10: Elle le Vaux Bien section */}
+      <ElleLeVaulxBien />
     </section>
   );
 };

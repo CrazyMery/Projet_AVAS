@@ -22,7 +22,7 @@ const Navbar: React.FC<NavbarProps> = ({
 
   const dropdownItems = [
     { label: 'Jeunesse', href: '/poles/pole-jeunesse' },
-    { label: 'Elle le Vaulx Bien', href: '/poles/elle-le-vaulx-bien' },
+    //{ label: 'Elle le Vaulx Bien', href: '/poles/elle-le-vaulx-bien' },
     { label: 'Médiation Urbaine', href: '/poles/mediation-urbaine' },
     { label: 'Citoyenneté', href: '/poles/citoyennete' },
   ];

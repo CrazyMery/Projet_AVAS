@@ -1,5 +1,6 @@
 import React from 'react';
-import { Target, Users, Globe, Heart, Scissors, ChefHat, Palette } from 'lucide-react';
+import { Target, Users, Globe, Heart, Scissors, ChefHat, Palette, ChevronRight } from 'lucide-react';
+import { useInfos } from '../hooks/useInfos';
 
 const ElleLeVaulxBien: React.FC = () => {
     const objectives = [
@@ -21,18 +22,19 @@ const ElleLeVaulxBien: React.FC = () => {
         "Elles se forment à des pratiques respectueuses de l'environnement."
     ];
 
+    const { site } = useInfos();
+
     return (
         <section>
             {/* Hero Section */}
-            <div className="relative h-[30vh] md:h-[40vh] lg:h-[50vh] flex items-center justify-center text-white">
+            <div className="relative h-[30vh] md:h-[40vh] lg:h-[50vh] flex items-center justify-center text-black">
                 {/* Fixed Background Image */}
                 <div
                     className="absolute inset-0 bg-fixed bg-center bg-cover z-0"
-                    style={{ backgroundImage: `url('/contact-hero.png')` }}
                 />
 
                 {/* Overlay for readability */}
-                <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
+                <div className="absolute inset-0 bg-opacity-50 z-10" />
 
                 {/* Content */}
                 <div className="relative z-20 max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-center">
@@ -51,6 +53,26 @@ const ElleLeVaulxBien: React.FC = () => {
                         Grand Mas. Il vise à favoriser l’insertion sociale des jeunes filles,
                         à les encourager à réinvestir l’espace public et à soutenir leur épanouissement personnel.
                     </p>
+                </div>
+            </div>
+            {/* White Content Box */}
+            <div className="bg-white shadow-2xl mb-5 mt-5 py-4 md:py-6 px-4 md:px-8 lg:px-12 max-w-3xl mx-auto">
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-4 md:gap-8">
+                    {/* Left Side - Text Content */}
+                    <p className="text-gray-600 text-base md:text-lg lg:mb-0 text-center lg:text-left">
+                    Agir pour nous aider à grandir
+                    </p>
+                    
+                    {/* Right Side - CTA Button */}
+                    <a 
+                    href="https://fr.ulule.com/elle-le-vaulx-bien-au-maroc-1/?utm_campaign=presale_206511&utm_source=shared-from-Ulule-project-page-on---http.referer--&utm_medium=uluid_6129853"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group bg-gradient-to-r from-[#FD6160] to-[#FD5F5E] text-white py-3 md:py-4 px-6 md:px-8 shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center space-x-2 rounded-full text-sm md:text-base"
+                    >
+                    <span className="whitespace-nowrap">FAIRE UN DON</span>
+                    <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                    </a>
                 </div>
             </div>
 

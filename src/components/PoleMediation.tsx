@@ -83,7 +83,7 @@ const PoleMediation: React.FC = () => {
                 {/* Fixed Background Image */}
                 <div
                     className="absolute inset-0 bg-fixed bg-center bg-cover z-0"
-                    style={{ backgroundImage: `url('/mediation-hero.jpg')` }}
+                    style={{ backgroundImage: `url('/mediation.jpeg')` }}
                 />
 
                 {/* Overlay for readability */}
@@ -342,7 +342,7 @@ const PoleMediation: React.FC = () => {
                             année une hausse de fréquentation, attirant quotidiennement entre
                             6 000 et 8 000 visiteurs.
                         </p>
-                        <img src="/ramadan.jpeg" alt="ramadan" className="w-96 h-auto rounded-lg shadow-lg mb-6 md:mb-8 lg:mb-12 hover:scale-105 transition-transform duration-300" />
+                        <img src="/ramadan2.jpeg" alt="ramadan" className="w-96 h-auto rounded-lg shadow-lg mb-6 md:mb-8 lg:mb-12 hover:scale-105 transition-transform duration-300" />
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12">
@@ -396,7 +396,7 @@ const PoleMediation: React.FC = () => {
                         </div>
                         <div className="aspect-video overflow-hidden rounded-lg shadow-lg">
                             <img
-                                src="/mediation-obj3.jpeg"
+                                src="/mediation-obj4.jpeg"
                                 alt="Étals du marché"
                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                             />

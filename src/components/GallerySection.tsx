@@ -12,7 +12,7 @@ const GallerySection: React.FC = () => {
     },
     {
       id: 2,
-      image: '/pole-jeunesse.png',
+      image: '/jeunesse2.jpeg',
       title: 'Le Pôle Jeunesse',
       description: `Le Pôle Jeunesse est le pilier fondateur de l'association. Dès sa création, il a incarné la volonté d'accompagner et de soutenir les jeunes du quartier dans tous les aspects de leur développement, qu'il s'agisse de leur épanouissement personnel, de leur réussite scolaire ou de leur insertion sociale et professionnelle.`,
       position: 'bottom-left',
