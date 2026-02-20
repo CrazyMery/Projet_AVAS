@@ -65,7 +65,7 @@ const ElleLeVaulxBien: React.FC = () => {
                     
                     {/* Right Side - CTA Button */}
                     <a 
-                    href="https://fr.ulule.com/elle-le-vaulx-bien-au-maroc-1/?utm_campaign=presale_206511&utm_source=shared-from-Ulule-project-page-on---http.referer--&utm_medium=uluid_6129853"
+                    href={site?.social?.linktr || "#"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group bg-gradient-to-r from-[#FD6160] to-[#FD5F5E] text-white py-3 md:py-4 px-6 md:px-8 shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center space-x-2 rounded-full text-sm md:text-base"

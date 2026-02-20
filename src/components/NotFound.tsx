@@ -10,13 +10,13 @@ const NotFound: React.FC = () => {
       link: '/',
       color: 'blue'
     },
-    {
+    /*{
       icon: Search,
       title: 'Actualités',
       description: 'Découvrez nos pôles d\'activité',
       link: '/actualites',
       color: 'blue'
-    },
+    },*/
     {
       icon: Mail,
       title: 'Contact',

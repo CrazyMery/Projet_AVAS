@@ -65,8 +65,6 @@ const Navbar: React.FC<NavbarProps> = ({
               {/* First 3 links */}
               <a href="/" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Accueil</a>
               <span className="text-gray-300">|</span>
-              <a href="/actualites" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Actualités</a>
-              <span className="text-gray-300">|</span>
               <a href="/about" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Qui sommes nous ?</a>
               <span className="text-gray-300">|</span>
 
@@ -168,7 +166,6 @@ const Navbar: React.FC<NavbarProps> = ({
         <div className="fixed top-20 left-0 right-0 bottom-0 bg-white z-40 px-6 py-6 overflow-y-auto">
           <div className="max-w-7xl px-20 mx-auto flex flex-col space-y-4 mt-20">
             <a href="/" className="text-gray-700 hover:text-blue-600 text-lg">Accueil</a>
-            <a href="/actualites" className="text-gray-700 hover:text-blue-600 text-lg">Actualités</a>
             <a href="/about" className="text-gray-700 hover:text-blue-600 text-lg">Qui sommes nous ?</a>
 
             {/* Dropdown Toggle */}

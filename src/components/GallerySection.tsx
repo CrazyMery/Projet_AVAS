@@ -18,16 +18,16 @@ const GallerySection: React.FC = () => {
       position: 'bottom-left',
       link: '/poles/pole-jeunesse'
     },
-    {
+    /*{
       id: 3,
       image: '/actus.JPG',
       title: 'Actus récentes',
       description: `découvrez les projets en cours (jeunes, citoyenneté, médiation urbaine), les événements mis en place et les chantiers solidaires`,
       position: 'bottom-right',
       link: '/actualites'
-    },
+    },*/
     {
-      id: 4,
+      id: 3,
       image: '/participer.jpg',
       title: 'Participer',
       description: `au renforcement de l'engagement des jeunes et des habitants de Vaulx-en-Velin, telle est notre ambition. À travers des actions en jeunesse, citoyenneté et médiation urbaine, nous favorisons l’accompagnement, la solidarité et le vivre-ensemble pour construire une dynamique locale positive et inclusive`,
@@ -98,10 +98,10 @@ const GallerySection: React.FC = () => {
             </a>
           </div>
 
-          {/* Second Row: 60% left, 40% right */}
+          {/* Second Row: 100% */}
           <div className="flex flex-col lg:flex-row gap-4 md:gap-8 h-[400px] md:h-[500px] lg:h-[600px]">
-            {/* Third Picture - 60% width */}
-            <a href={galleryItems[2].link} className="lg:w-3/5 relative overflow-hidden group">
+            {/* Third Picture - 100% width */}
+            <a href={galleryItems[2].link} className="lg:w-[100%] relative overflow-hidden group">
               <img
                 src={galleryItems[2].image}
                 alt={galleryItems[2].title}
@@ -116,26 +116,6 @@ const GallerySection: React.FC = () => {
                 </h3>
                 <p className="text-gray-600 text-xs leading-relaxed line-clamp-4">
                   {galleryItems[2].description}
-                </p>
-              </div>
-            </a>
-
-            {/* Fourth Picture - 40% width */}
-            <a href={galleryItems[3].link} target='_blank' rel="noopener noreferrer" className="lg:w-2/5 relative overflow-hidden group">
-              <img
-                src={galleryItems[3].image}
-                alt={galleryItems[3].title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-30 transition-all duration-300"></div>
-              
-              {/* Content Box - Top Right */}
-              <div className={`absolute ${getPositionClasses(galleryItems[3].position)} bg-white shadow-lg border-t-2 border-b-2 border-black p-3 md:p-6 w-48 md:w-56 transform group-hover:scale-105 transition-transform duration-300`}>
-                <h3 className="text-sm md:text-md font-bold text-gray-900 mb-2 md:mb-3">
-                  {galleryItems[3].title}
-                </h3>
-                <p className="text-gray-600 text-xs leading-relaxed line-clamp-4">
-                  {galleryItems[3].description}
                 </p>
               </div>
             </a>

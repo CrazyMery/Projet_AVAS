@@ -442,7 +442,10 @@ const PoleJeunesse: React.FC = () => {
       </div>
 
       {/* Section 10: Elle le Vaux Bien section */}
-      <ElleLeVaulxBien />
+      <div id='activity-6'>
+        <ElleLeVaulxBien />
+      </div>
+      
     </section>
   );
 };

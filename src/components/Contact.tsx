@@ -203,7 +203,7 @@ const Contact: React.FC = () => {
                     Chaque contribution compte et fait une réelle différence.
                   </p>
                   <a
-                    href={site?.social?.donation || '#'} // Replace with your real donation link
+                    href={site?.social?.linktr || '#'} // Replace with your real donation link
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-white text-blue-700 font-semibold px-6 md:px-8 py-2 md:py-3 rounded-full hover:bg-gray-100 transition-colors duration-200 text-sm md:text-base"
