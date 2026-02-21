@@ -197,11 +197,10 @@ const Navbar: React.FC<NavbarProps> = ({
             </div>
 
             <a href="/partenaires" className="text-gray-700 hover:text-blue-600 text-lg">Nos partenaires</a>
-            <a href="/equipe" className="text-gray-700 hover:text-blue-600 text-lg">Notre équipe</a>
             <a href="/contact" className="text-gray-700 hover:text-blue-600 text-lg">Contact</a>
             
             {/* Mobile Authentication */}
-            {!isAuthenticated ? (
+            {/*!isAuthenticated ? (
               <button 
                 onClick={handleLogin}
                 className="text-gray-700 hover:text-blue-600 text-lg text-left"
@@ -243,7 +242,7 @@ const Navbar: React.FC<NavbarProps> = ({
                   </button>
                 </div>
               </div>
-            )}
+            )*/}
           </div>
         </div>
       )}
